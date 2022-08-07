@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/*review*/ /*review*/
 html,
 body,
 div,
@@ -130,6 +131,7 @@ table {
   border-spacing: 0;
 }
 
+/*review*/
 /*Fonts*/
 @font-face {
   font-family: "Delius Unicase";
@@ -138,6 +140,7 @@ table {
   font-weight: 400;
 }
 /*Colors*/
+/*review*/
 * {
   font-size: 16px;
   box-sizing: border-box;
@@ -168,6 +171,7 @@ table {
   transition: filter 0.3s ease-in-out;
 }
 
+/*review*/
 .architectural {
   margin-bottom: 60px;
   padding-top: 60px;
@@ -274,6 +278,7 @@ table {
   color: #fff;
 }
 
+/*review*/
 .still-life {
   margin-bottom: 60px;
 }
@@ -379,6 +384,7 @@ table {
   color: #fff;
 }
 
+/*review*/
 .portrait-fashion {
   padding-top: 20px;
   padding-bottom: 60px;
@@ -499,6 +505,7 @@ table {
 }
 
 @media only screen and (min-width: 768px) {
+  /*review*/
   * {
     font-size: 16px;
     box-sizing: border-box;
@@ -528,6 +535,7 @@ table {
   }
 }
 @media only screen and (min-width: 1200px) {
+  /*review*/
   * {
     font-size: 20px;
     font-weight: 400;
@@ -553,6 +561,7 @@ table {
     clip: rect(0 0 0 0);
     overflow: hidden;
   }
+  /*review*/
   .architectural {
     padding-top: 120px;
     margin-bottom: 120px;
@@ -591,6 +600,7 @@ table {
   .architectural .grid-photo__item:nth-of-type(6) {
     grid-area: 3/2/4/4;
   }
+  /*review*/
   .still-life {
     margin-bottom: 120px;
   }
@@ -628,6 +638,7 @@ table {
   .still-life .grid-photo__item:nth-of-type(6) {
     grid-area: 3/3/4/4;
   }
+  /*review*/
   .portrait-fashion {
     margin-bottom: 120px;
   }
