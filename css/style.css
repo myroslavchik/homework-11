@@ -1,0 +1,682 @@
+@charset "UTF-8";
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*Fonts*/
+@font-face {
+  font-family: "Delius Unicase";
+  src: url("/fonts/delius_unicase/DeliusUnicase-Regular.woff2") format("woff2"), url("/fonts/delius_unicase/DeliusUnicase-Regular.woff") format("woff");
+  font-style: normal;
+  font-weight: 400;
+}
+/*Colors*/
+* {
+  font-size: 16px;
+  box-sizing: border-box;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.grid-photo__item:hover {
+  filter: drop-shadow(0px 0px 30px rgba(0, 0, 0, 0.5));
+  transition: filter 0.3s ease-in-out;
+}
+
+.architectural {
+  margin-bottom: 60px;
+  padding-top: 60px;
+}
+.architectural h2 {
+  font-family: "Delius Unicase";
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 2;
+  text-align: center;
+  color: #000;
+  letter-spacing: 0.05em;
+  margin-bottom: 20px;
+}
+.architectural .grid-photo {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(6, 370px);
+  gap: 30px;
+}
+.architectural .grid-photo__item {
+  position: relative;
+  grid-column: span 1;
+  grid-row: span 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  background-image: url("/img/section-1/no-image.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  border-radius: 20px;
+  overflow: hidden;
+  padding: 20px;
+}
+.architectural .grid-photo__item:nth-of-type(1) {
+  background-image: url("/img/section-1/image-Jezael-Melgoza.png");
+}
+.architectural .grid-photo__item:nth-of-type(2) {
+  background-image: url("/img/section-1/image-Tom-W.png");
+}
+.architectural .grid-photo__item:nth-of-type(3) {
+  background-image: url("/img/section-1/image-Johan-Mouchet.png");
+}
+.architectural .grid-photo__item:nth-of-type(4) {
+  background-image: url("/img/section-1/image-Federico-Di-Dio.png");
+}
+.architectural .grid-photo__item:nth-of-type(5) {
+  background-image: url("/img/section-1/image-Casey-Horner.png");
+}
+.architectural .grid-photo__item:nth-of-type(6) {
+  background-image: url("/img/section-1/image-Alexander-Rotker.png");
+}
+.architectural .grid-photo__item::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%);
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+.architectural .grid-photo__item:hover::after {
+  opacity: 0;
+}
+.architectural .grid-photo__item-top,
+.architectural .grid-photo__item-bottom {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.architectural .grid-photo__item-top button {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(224, 224, 224, 0.5);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  padding: 0;
+  transition: background-color 0.3s ease;
+}
+.architectural .grid-photo__item-top button:hover {
+  background-color: rgba(224, 224, 224, 0.8784313725);
+}
+.architectural .grid-photo__item-top button .icon {
+  width: 20px;
+  height: 20px;
+}
+.architectural .grid-photo__item-bottom h3 {
+  font-size: 20px;
+  font-weight: 500;
+  color: #fff;
+}
+.architectural .grid-photo__item-bottom span {
+  font-size: 20px;
+  color: #fff;
+}
+
+.still-life {
+  margin-bottom: 60px;
+}
+.still-life h2 {
+  font-family: "Delius Unicase";
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 2;
+  text-align: center;
+  color: #000;
+  letter-spacing: 0.05em;
+  margin-bottom: 20px;
+}
+.still-life .grid-photo {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(6, 370px);
+  gap: 30px;
+}
+.still-life .grid-photo__item {
+  position: relative;
+  grid-column: span 1;
+  grid-row: span 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  background-image: url("/img/section-1/no-image.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  border-radius: 20px;
+  overflow: hidden;
+  padding: 20px;
+}
+.still-life .grid-photo__item:nth-of-type(1) {
+  background-image: url("/img/section-2/image-Robert-Lukeman.png");
+}
+.still-life .grid-photo__item:nth-of-type(2) {
+  background-image: url("/img/section-2/image-Sean-Oulashin.png");
+}
+.still-life .grid-photo__item:nth-of-type(3) {
+  background-image: url("/img/section-2/image-John-Fowler.png");
+}
+.still-life .grid-photo__item:nth-of-type(4) {
+  background-image: url("/img/section-2/image-Dave-Hoefler.png");
+}
+.still-life .grid-photo__item:nth-of-type(5) {
+  background-image: url("/img/section-2/image-Léonard-Cotte.png");
+}
+.still-life .grid-photo__item:nth-of-type(6) {
+  background-image: url("/img/section-2/image-Rob-Mulally.png");
+}
+.still-life .grid-photo__item::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%);
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+.still-life .grid-photo__item:hover::after {
+  opacity: 0;
+}
+.still-life .grid-photo__item-top,
+.still-life .grid-photo__item-bottom {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.still-life .grid-photo__item-top button {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(224, 224, 224, 0.5);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  padding: 0;
+  transition: background-color 0.3s ease;
+}
+.still-life .grid-photo__item-top button:hover {
+  background-color: rgba(224, 224, 224, 0.8784313725);
+}
+.still-life .grid-photo__item-top button .icon {
+  width: 20px;
+  height: 20px;
+}
+.still-life .grid-photo__item-bottom h3 {
+  font-size: 20px;
+  font-weight: 500;
+  color: #fff;
+}
+.still-life .grid-photo__item-bottom span {
+  font-size: 20px;
+  color: #fff;
+}
+
+.portrait-fashion {
+  padding-top: 20px;
+  padding-bottom: 60px;
+}
+.portrait-fashion h2 {
+  font-family: "Delius Unicase";
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 2;
+  text-align: center;
+  color: #000;
+  letter-spacing: 0.05em;
+  margin-bottom: 20px;
+}
+.portrait-fashion .grid-photo {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(10, 370px);
+  gap: 30px;
+}
+.portrait-fashion .grid-photo__item {
+  position: relative;
+  grid-column: span 1;
+  grid-row: span 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  background-image: url("/img/section-1/no-image.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  border-radius: 20px;
+  overflow: hidden;
+  padding: 20px;
+}
+.portrait-fashion .grid-photo__item:nth-of-type(1) {
+  background-image: url("/img/section-3/image-Pooja-Chaudhary.png");
+}
+.portrait-fashion .grid-photo__item:nth-of-type(2) {
+  background-image: url("/img/section-3/image-devn.png");
+}
+.portrait-fashion .grid-photo__item:nth-of-type(3) {
+  background-image: url("/img/section-3/image-Dom-Hill.png");
+  background-position: top;
+}
+.portrait-fashion .grid-photo__item:nth-of-type(4) {
+  background-image: url("/img/section-3/image-1-Seth-Doyle.png");
+}
+.portrait-fashion .grid-photo__item:nth-of-type(5) {
+  background-image: url("/img/section-3/image-Sincerely-Media.png");
+}
+.portrait-fashion .grid-photo__item:nth-of-type(6) {
+  background-image: url("/img/section-3/image-Seth-Doyle.png");
+}
+.portrait-fashion .grid-photo__item:nth-of-type(7) {
+  background-image: url("/img/section-3/image-Noah-Buscher.png");
+}
+.portrait-fashion .grid-photo__item:nth-of-type(8) {
+  background-image: url("/img/section-3/image-Melissa-Askew.png");
+}
+.portrait-fashion .grid-photo__item:nth-of-type(9) {
+  background-image: url("/img/section-3/image-Brooke-Cagle.png");
+}
+.portrait-fashion .grid-photo__item:nth-of-type(10) {
+  background-image: url("/img/section-3/image-Clem-Onojeghuo.png");
+}
+.portrait-fashion .grid-photo__item::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%);
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+.portrait-fashion .grid-photo__item:hover::after {
+  opacity: 0;
+}
+.portrait-fashion .grid-photo__item-top,
+.portrait-fashion .grid-photo__item-bottom {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.portrait-fashion .grid-photo__item-top button {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(224, 224, 224, 0.5);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  padding: 0;
+  transition: background-color 0.3s ease;
+}
+.portrait-fashion .grid-photo__item-top button:hover {
+  background-color: rgba(224, 224, 224, 0.8784313725);
+}
+.portrait-fashion .grid-photo__item-top button .icon {
+  width: 20px;
+  height: 20px;
+}
+.portrait-fashion .grid-photo__item-bottom h3 {
+  font-size: 20px;
+  font-weight: 500;
+  color: #fff;
+}
+.portrait-fashion .grid-photo__item-bottom span {
+  font-size: 20px;
+  color: #fff;
+}
+
+@media only screen and (min-width: 768px) {
+  * {
+    font-size: 16px;
+    box-sizing: border-box;
+    font-family: "Roboto", "Arial", sans-serif;
+    font-weight: 400;
+    line-height: 1;
+  }
+  .container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  .architectural .grid-photo {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 370px);
+  }
+  .still-life .grid-photo {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 370px);
+  }
+  .portrait-fashion .grid-photo {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 370px);
+  }
+}
+@media only screen and (min-width: 1200px) {
+  * {
+    font-size: 20px;
+    font-weight: 400;
+    font-family: "Roboto", "Arial", sans-serif;
+    line-height: 1;
+    box-sizing: border-box;
+  }
+  .container {
+    min-width: 1440px;
+    margin: 0 auto;
+    padding: 0 135px;
+  }
+  .no-scroll {
+    overflow-y: hidden;
+  }
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+  .architectural {
+    padding-top: 120px;
+    margin-bottom: 120px;
+  }
+  .architectural h2 {
+    font-family: "Delius Unicase";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    margin-bottom: 80px;
+  }
+  .architectural .grid-photo {
+    display: grid;
+    grid-template-columns: repeat(3, 370px);
+    grid-template-rows: repeat(3, 370px);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+  }
+  .architectural .grid-photo__item:nth-of-type(1) {
+    grid-area: 1/1/2/2;
+  }
+  .architectural .grid-photo__item:nth-of-type(2) {
+    grid-area: 1/2/2/4;
+  }
+  .architectural .grid-photo__item:nth-of-type(3) {
+    grid-area: 2/1/3/3;
+  }
+  .architectural .grid-photo__item:nth-of-type(4) {
+    grid-area: 2/3/3/4;
+  }
+  .architectural .grid-photo__item:nth-of-type(5) {
+    grid-area: 3/1/4/2;
+  }
+  .architectural .grid-photo__item:nth-of-type(6) {
+    grid-area: 3/2/4/4;
+  }
+  .still-life {
+    margin-bottom: 120px;
+  }
+  .still-life h2 {
+    font-family: "Delius Unicase";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    margin-bottom: 80px;
+  }
+  .still-life .grid-photo {
+    display: grid;
+    grid-template-columns: repeat(3, 370px);
+    grid-template-rows: 370px 770px 370px;
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+  }
+  .still-life .grid-photo__item:nth-of-type(1) {
+    grid-area: 1/1/2/2;
+  }
+  .still-life .grid-photo__item:nth-of-type(2) {
+    grid-area: 1/2/2/4;
+  }
+  .still-life .grid-photo__item:nth-of-type(3) {
+    grid-area: 2/1/3/3;
+  }
+  .still-life .grid-photo__item:nth-of-type(4) {
+    grid-area: 2/3/3/4;
+  }
+  .still-life .grid-photo__item:nth-of-type(5) {
+    grid-area: 3/1/4/3;
+  }
+  .still-life .grid-photo__item:nth-of-type(6) {
+    grid-area: 3/3/4/4;
+  }
+  .portrait-fashion {
+    margin-bottom: 120px;
+  }
+  .portrait-fashion h2 {
+    font-family: "Delius Unicase";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    margin-bottom: 80px;
+  }
+  .portrait-fashion .grid-photo {
+    display: grid;
+    grid-template-columns: repeat(3, 370px);
+    grid-template-rows: repeat(5, 370px);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+  }
+  .portrait-fashion .grid-photo__item:nth-of-type(1) {
+    grid-area: 1/1/2/2;
+  }
+  .portrait-fashion .grid-photo__item:nth-of-type(2) {
+    grid-area: 2/1/3/2;
+  }
+  .portrait-fashion .grid-photo__item:nth-of-type(3) {
+    grid-area: 1/2/3/3;
+  }
+  .portrait-fashion .grid-photo__item:nth-of-type(4) {
+    grid-area: 1/3/2/4;
+  }
+  .portrait-fashion .grid-photo__item:nth-of-type(5) {
+    grid-area: 3/1/5/2;
+  }
+  .portrait-fashion .grid-photo__item:nth-of-type(6) {
+    grid-area: 3/2/4/3;
+  }
+  .portrait-fashion .grid-photo__item:nth-of-type(7) {
+    grid-area: 2/3/4/4;
+  }
+  .portrait-fashion .grid-photo__item:nth-of-type(8) {
+    grid-area: 4/2/5/4;
+  }
+  .portrait-fashion .grid-photo__item:nth-of-type(9) {
+    grid-area: 5/1/6/3;
+  }
+  .portrait-fashion .grid-photo__item:nth-of-type(10) {
+    grid-area: 5/3/6/4;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

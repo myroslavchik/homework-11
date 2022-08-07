@@ -1,0 +1,129 @@
+.architectural {
+    margin-bottom: 60px;
+    padding-top: 60px;
+
+
+h2 {
+    font-family: 'Delius Unicase';
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 2;
+    text-align: center;
+    color: $blackColor;
+    letter-spacing: 0.05em;
+    margin-bottom: 20px;
+}
+
+.grid-photo {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 370px);
+    gap: 30px;
+}
+
+.grid-photo__item {
+    position: relative;
+    grid-column: span 1;
+    grid-row: span 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    background-image: url('/img/section-1/no-image.png');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.grid-photo__item:nth-of-type(1) {
+    background-image: url('/img/section-1/image-Jezael-Melgoza.png');
+}
+
+.grid-photo__item:nth-of-type(2) {
+    background-image: url('/img/section-1/image-Tom-W.png');
+}
+
+.grid-photo__item:nth-of-type(3) {
+    background-image: url('/img/section-1/image-Johan-Mouchet.png');
+}
+
+.grid-photo__item:nth-of-type(4) {
+    background-image: url('/img/section-1/image-Federico-Di-Dio.png');
+}
+
+.grid-photo__item:nth-of-type(5) {
+    background-image: url('/img/section-1/image-Casey-Horner.png');
+}
+
+.grid-photo__item:nth-of-type(6) {
+    background-image: url('/img/section-1/image-Alexander-Rotker.png');
+}
+
+
+.grid-photo__item::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: $photoBlure;
+    opacity: 1;
+    transition: opacity .3s ease;
+}
+
+
+.grid-photo__item:hover::after {
+    opacity: 0;
+
+}
+
+.grid-photo__item-top,
+.grid-photo__item-bottom {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.grid-photo__item-top button {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(224, 224, 224, 0.5);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    padding: 0;
+    transition: background-color .3s ease;
+}
+
+.grid-photo__item-top button:hover {
+    background-color: #E0E0E0E0;
+}
+
+.grid-photo__item-top button .icon {
+    width: 20px;
+    height: 20px;
+}
+
+.grid-photo__item-bottom h3 {
+    font-size: 20px;
+    font-weight: 500;
+    color: $whiteColor;
+}
+
+.grid-photo__item-bottom span {
+    font-size: 20px;
+    color: $whiteColor;
+}
+
+
+}

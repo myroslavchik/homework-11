@@ -1,0 +1,18 @@
+/*Fonts*/ 
+
+$baseFontSize: 20px;
+
+@font-face {
+    font-family: 'Delius Unicase';
+    src: url('/fonts/delius_unicase/DeliusUnicase-Regular.woff2') format('woff2'),
+        url('/fonts/delius_unicase/DeliusUnicase-Regular.woff') format('woff');
+    font-style: normal;
+    font-weight: 400;
+}
+
+
+/*Colors*/
+
+$blackColor: #000;
+$whiteColor: #fff;
+$photoBlure: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%);
