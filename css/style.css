@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*review*/ /*review*/
 html,
 body,
@@ -212,19 +211,19 @@ table {
   background-image: url("../img/section-1/image-1.jpg");
 }
 .architectural .grid-photo__item:nth-of-type(2) {
-  background-image: url("/img/section-1/image-tom-w.png");
+  background-image: url("../img/section-1/image-2.jpg");
 }
 .architectural .grid-photo__item:nth-of-type(3) {
-  background-image: url("/img/section-1/image-johan-mouchet.png");
+  background-image: url("../img/section-1/image-3.jpg");
 }
 .architectural .grid-photo__item:nth-of-type(4) {
-  background-image: url("/img/section-1/image-federico-di-dio.png");
+  background-image: url("../img/section-1/image-4.jpg");
 }
 .architectural .grid-photo__item:nth-of-type(5) {
-  background-image: url("/img/section-1/image-casey-horner.png");
+  background-image: url("../img/section-1/image-5.jpg");
 }
 .architectural .grid-photo__item:nth-of-type(6) {
-  background-image: url("/img/section-1/image-alexander-rotker.png");
+  background-image: url("../img/section-1/image-6.jpg");
 }
 .architectural .grid-photo__item::after {
   content: "";
@@ -315,22 +314,22 @@ table {
   padding: 20px;
 }
 .still-life .grid-photo__item:nth-of-type(1) {
-  background-image: url("/img/section-2/image-robert-lukeman.png");
+  background-image: url("../img/section-2/image-1.jpg");
 }
 .still-life .grid-photo__item:nth-of-type(2) {
-  background-image: url("/img/section-2/image-sean-oulashin.png");
+  background-image: url("../img/section-2/image-2.jpg");
 }
 .still-life .grid-photo__item:nth-of-type(3) {
-  background-image: url("/img/section-2/image-john-fowler.png");
+  background-image: url("../img/section-2/image-3.jpg");
 }
 .still-life .grid-photo__item:nth-of-type(4) {
-  background-image: url("/img/section-2/image-dave-hoefler.png");
+  background-image: url("../img/section-2/image-4.jpg");
 }
 .still-life .grid-photo__item:nth-of-type(5) {
-  background-image: url("/img/section-2/image-léonard-cotte.png");
+  background-image: url("../img/section-2/image-5.jpg");
 }
 .still-life .grid-photo__item:nth-of-type(6) {
-  background-image: url("/img/section-2/image-rob-mulally.png");
+  background-image: url("../img/section-2/image-6.jpg");
 }
 .still-life .grid-photo__item::after {
   content: "";
@@ -422,35 +421,35 @@ table {
   padding: 20px;
 }
 .portrait-fashion .grid-photo__item:nth-of-type(1) {
-  background-image: url("/img/section-3/image-pooja-chaudhary.png");
+  background-image: url("../img/section-3/image-1.jpg");
 }
 .portrait-fashion .grid-photo__item:nth-of-type(2) {
-  background-image: url("/img/section-3/image-devn.png");
+  background-image: url("../img/section-3/image-2.jpg");
 }
 .portrait-fashion .grid-photo__item:nth-of-type(3) {
-  background-image: url("/img/section-3/image-dom-hill.png");
+  background-image: url("../img/section-3/image-3.jpg");
   background-position: top;
 }
 .portrait-fashion .grid-photo__item:nth-of-type(4) {
-  background-image: url("/img/section-3/image-seth-doyle.png");
+  background-image: url("../img/section-3/image-4.jpg");
 }
 .portrait-fashion .grid-photo__item:nth-of-type(5) {
-  background-image: url("/img/section-3/image-sincerely-media.png");
+  background-image: url("../img/section-3/image-5.jpg");
 }
 .portrait-fashion .grid-photo__item:nth-of-type(6) {
-  background-image: url("/img/section-3/image-seth-doyle.png");
+  background-image: url("../img/section-3/image-6.jpg");
 }
 .portrait-fashion .grid-photo__item:nth-of-type(7) {
-  background-image: url("/img/section-3/image-noah-buscher.png");
+  background-image: url("../img/section-3/image-7.jpg");
 }
 .portrait-fashion .grid-photo__item:nth-of-type(8) {
-  background-image: url("/img/section-3/image-melissa-askew.png");
+  background-image: url("../img/section-3/image-8.jpg");
 }
 .portrait-fashion .grid-photo__item:nth-of-type(9) {
-  background-image: url("/img/section-3/image-brooke-cagle.png");
+  background-image: url("../img/section-3/image-9.jpg");
 }
 .portrait-fashion .grid-photo__item:nth-of-type(10) {
-  background-image: url("/img/section-3/image-clem-onojeghuo.png");
+  background-image: url("../img/section-3/image-10.jpg");
 }
 .portrait-fashion .grid-photo__item::after {
   content: "";
