@@ -133,7 +133,7 @@ table {
 
 @font-face {
   font-family: "Delius Unicase";
-  src: url("/fonts/delius_unicase/DeliusUnicase-Regular.woff2") format("woff2"), url("/fonts/delius_unicase/DeliusUnicase-Regular.woff") format("woff");
+  src: url("../fonts/delius_unicase/DeliusUnicase-Regular.woff2") format("woff2"), url("../fonts/delius_unicase/DeliusUnicase-Regular.woff") format("woff");
   font-style: normal;
   font-weight: 400;
 }
