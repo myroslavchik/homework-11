@@ -131,14 +131,14 @@ table {
   border-spacing: 0;
 }
 
-/*review*/
-/*Fonts*/
 @font-face {
   font-family: "Delius Unicase";
-  src: url("./fonts/delius_unicase/DeliusUnicase-Regular.woff2") format("woff2"), url("./fonts/delius_unicase/DeliusUnicase-Regular.woff") format("woff");
+  src: url("/fonts/delius_unicase/DeliusUnicase-Regular.woff2") format("woff2"), url("/fonts/delius_unicase/DeliusUnicase-Regular.woff") format("woff");
   font-style: normal;
   font-weight: 400;
 }
+/*review*/
+/*Fonts*/
 /*Colors*/
 /*review*/
 * {
@@ -315,22 +315,22 @@ table {
   padding: 20px;
 }
 .still-life .grid-photo__item:nth-of-type(1) {
-  background-image: url("./img/section-2/image-Robert-Lukeman.png");
+  background-image: url("/img/section-2/image-robert-lukeman.png");
 }
 .still-life .grid-photo__item:nth-of-type(2) {
-  background-image: url("./img/section-2/image-Sean-Oulashin.png");
+  background-image: url("/img/section-2/image-sean-oulashin.png");
 }
 .still-life .grid-photo__item:nth-of-type(3) {
-  background-image: url("./img/section-2/image-John-Fowler.png");
+  background-image: url("/img/section-2/image-john-fowler.png");
 }
 .still-life .grid-photo__item:nth-of-type(4) {
-  background-image: url("./img/section-2/image-Dave-Hoefler.png");
+  background-image: url("/img/section-2/image-dave-hoefler.png");
 }
 .still-life .grid-photo__item:nth-of-type(5) {
-  background-image: url("./img/section-2/image-Léonard-Cotte.png");
+  background-image: url("/img/section-2/image-léonard-cotte.png");
 }
 .still-life .grid-photo__item:nth-of-type(6) {
-  background-image: url("./img/section-2/image-Rob-Mulally.png");
+  background-image: url("/img/section-2/image-rob-mulally.png");
 }
 .still-life .grid-photo__item::after {
   content: "";
@@ -422,35 +422,35 @@ table {
   padding: 20px;
 }
 .portrait-fashion .grid-photo__item:nth-of-type(1) {
-  background-image: url("./img/section-3/image-Pooja-Chaudhary.png");
+  background-image: url("/img/section-3/image-pooja-chaudhary.png");
 }
 .portrait-fashion .grid-photo__item:nth-of-type(2) {
-  background-image: url("./img/section-3/image-devn.png");
+  background-image: url("/img/section-3/image-devn.png");
 }
 .portrait-fashion .grid-photo__item:nth-of-type(3) {
-  background-image: url("./img/section-3/image-Dom-Hill.png");
+  background-image: url("/img/section-3/image-dom-hill.png");
   background-position: top;
 }
 .portrait-fashion .grid-photo__item:nth-of-type(4) {
-  background-image: url("./img/section-3/image-1-Seth-Doyle.png");
+  background-image: url("/img/section-3/image-seth-doyle.png");
 }
 .portrait-fashion .grid-photo__item:nth-of-type(5) {
-  background-image: url("./img/section-3/image-Sincerely-Media.png");
+  background-image: url("/img/section-3/image-sincerely-media.png");
 }
 .portrait-fashion .grid-photo__item:nth-of-type(6) {
-  background-image: url("./img/section-3/image-Seth-Doyle.png");
+  background-image: url("/img/section-3/image-seth-doyle.png");
 }
 .portrait-fashion .grid-photo__item:nth-of-type(7) {
-  background-image: url("./img/section-3/image-Noah-Buscher.png");
+  background-image: url("/img/section-3/image-noah-buscher.png");
 }
 .portrait-fashion .grid-photo__item:nth-of-type(8) {
-  background-image: url("./img/section-3/image-Melissa-Askew.png");
+  background-image: url("/img/section-3/image-melissa-askew.png");
 }
 .portrait-fashion .grid-photo__item:nth-of-type(9) {
-  background-image: url("./img/section-3/image-Brooke-Cagle.png");
+  background-image: url("/img/section-3/image-brooke-cagle.png");
 }
 .portrait-fashion .grid-photo__item:nth-of-type(10) {
-  background-image: url("./img/section-3/image-Clem-Onojeghuo.png");
+  background-image: url("/img/section-3/image-clem-onojeghuo.png");
 }
 .portrait-fashion .grid-photo__item::after {
   content: "";
